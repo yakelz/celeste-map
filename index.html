@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Интерактивная Карта</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/instruments.css" />
+		<script
+			defer
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		></script>
+		<script defer type="module" src="./js/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="./img/players/main.png" alt="Аватарка персонажа" />
+			<div class="profile__buttons">
+				<button id="profile-reg">Create account</button>
+				<button id="profile-login">Login</button>
+				<button id="profile-edit">Edit profile</button>
+			</div>
+		</header>
+		<main>
+			<div id="map"></div>
+		</main>
+		<footer>
+			<div class="menu__instruments">
+				<h2>Levels</h2>
+				<div class="levels-grid">
+					<button data-map-id="map1">1</button>
+					<button data-map-id="map2">2</button>
+					<button data-map-id="map3" disabled>3</button>
+					<button data-map-id="map4" disabled>4</button>
+					<button data-map-id="map5" disabled>5</button>
+					<button data-map-id="map6" disabled>6</button>
+					<button data-map-id="map7" disabled>7</button>
+					<button data-map-id="map8" disabled>8</button>
+				</div>
+			</div>
+			<div class="menu">
+				<button id="instruments">Instruments</button>
+				<button id="news">News</button>
+			</div>
+		</footer>
+	</body>
+</html>

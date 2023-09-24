@@ -1,0 +1,46 @@
+.menu {
+	display: flex;
+	gap: 2px;
+	background-color: grey;
+	margin-top: 10px;
+}
+.menu__instruments {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 0.5s ease, max-height 0.5s ease;
+	background-color: var(--back-back-color);
+	padding: 10px;
+}
+
+.menu__instruments.active {
+	opacity: 1;
+	max-height: 200px;
+}
+
+.menu__instruments h2 {
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+.menu button {
+	width: 50%;
+	background-color: var(--back-back-color);
+	border: 0;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 700;
+}
+.menu button:hover {
+	filter: brightness(90%);
+}
+
+.levels-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
